@@ -1,0 +1,51 @@
+.uno{
+    background-color: #DCDCDC;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 30px;
+}
+.dos{
+    background-color: #fed966;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 40px;
+}
+.tres{
+    background-color: #DCDCDC;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.cuatro{
+    background-color: #fed966;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 40px;
+}
+.cinco{
+    background-color: #fed966;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 40px;
+}
+.tabla{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 40px;
+
+}
+.foo{
+    height: 20%;
+    width: 20%;
+}
