@@ -1,4 +1,4 @@
-.uno{
+.uno {
     background-color: #DCDCDC;
     text-align: center;
     margin-left: auto;
@@ -6,7 +6,8 @@
     width: 50%;
     margin-top: 30px;
 }
-.dos{
+
+.dos {
     background-color: #fed966;
     text-align: center;
     margin-left: auto;
@@ -14,14 +15,16 @@
     width: 50%;
     padding: 40px;
 }
-.tres{
+
+.tres {
     background-color: #DCDCDC;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-.cuatro{
+
+.cuatro {
     background-color: #fed966;
     text-align: center;
     margin-left: auto;
@@ -29,7 +32,8 @@
     width: 50%;
     margin-top: 40px;
 }
-.cinco{
+
+.cinco {
     background-color: #fed966;
     text-align: center;
     margin-left: auto;
@@ -37,15 +41,14 @@
     width: 50%;
     margin-top: 40px;
 }
-.tabla{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 40px;
+
+.contenedor {
+    float: left;
+    margin: 3px;
+    padding: 3px;
 
 }
-.foo{
-    height: 20%;
-    width: 20%;
+
+.img {
+    padding: 0;
 }
