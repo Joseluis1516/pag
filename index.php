@@ -16,27 +16,60 @@
     <title>Document</title>
 </head>
 
-<body style="background-color: #f4b184; ">
+<body style="background-color: #f4b184" class="body" >
+<div class="body">
+    <div style="text-align:center;" class="img ">
+        <div class="uno">
+            <h1>Cenaduria Doña Rita</h1>
 
-    <div style="text-align:center;" class="uno">
-        <h1>Cenaduria Doña Rita</h1>
-        <img src="img/logo.png" width="200" height="200">
+        </div>
 
-    </div><br>
-    <div class="dos">
-        <pre>Son tostadas y gorditas comida casera hecha en hornillas muy ricas,
-baratas y con muy buena atención se les atiende.</pre>
+        <img src="img/ama.png" width="700">
+
     </div>
-    <br>
-    <!-- <div class="tres">
-    <pre> <b> Contactos</b> <br>
-       <b> Facebook:</b> cenaduría doña Rita <br>
-       <b> Cel:</b> 69411855996 o 6941165283</pre>
-</div> -->
 
+
+
+
+    <?php
+    include 'mostrartexto.php';
+
+    $resultado = mysqli_query($conexion, $descripcion);
+    while ($mostrar = mysqli_fetch_array($resultado)) {
+    ?>
+        <div class="cuatro">
+            <p><?php echo $mostrar['texto']; ?></p>
+        </div>
+    <?php
+    }
+    mysqli_free_result($resultado)
+    ?>
+</div>
 </body>
-</html>
 
+</html>
+<br>
+<br>
 <div style="background-color: #DCDCDC;">
     <?php include('pie.php') ?>
 </div>
+
+
+
+<style>
+    .img {
+        padding: 15px;
+
+    }
+    .body{
+        background-image: url('https://p4.wallpaperbetter.com/wallpaper/587/220/849/abstract-colorful-warm-colors-blurred-soft-gradient-wallpaper-preview.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        filter: blur("100px");
+    }
+    .cuatro{
+        background-color: #f4b184;
+        padding: 20px;
+    }
+</style>
