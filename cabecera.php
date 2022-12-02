@@ -15,11 +15,13 @@
 </head>
 
 <body>
+  
 
    
     <nav class="navbar bg-light">
   <div>
   <a href="index.php"><img src="img/logo.png" alt="" height="50" width="50"></a>
+  <a class="navbar-brand" href="index.php" >Inicio</a>
   <a class="navbar-brand" href="pagina2.php" >Menu</a>
   </div>
 </nav>
