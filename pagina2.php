@@ -11,45 +11,66 @@
     <!-- css only -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- stylesheet -->
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css?a=1">
     <!-- javaScript  -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
 </head>
 
 <body style="background-color: #f4b184; ">
-    <div class="cuatro">
-        <pre>
-        <b> <h5> Tostadas y Gorditas</h5></b> <br>
-            De Carne, Pollo, Higado, Bofe, Corazon,
-            Manita de Puerco(entomatada o escabeches), Pieza,
-            orden asado.
-        </pre>
-    </div>
-    <div class="cinco">
-        <pre>
-            <b>Bebidas</b>
-            <p>Coca cola, Fanta, Agua de cebada,
-Agua de nanchi, Agua de piña</p>
-        </pre>
-    </div>
-    <table class="tabla">
-        <td>
-            <img src="img/to.png" class="img">
-            <img src="img/asa.png" class="img">
-            <img src="img/tos.png" class="img">
-            <img src="img/lo.png" class="img">
-            <img src="img/go.png" class="img">
-            <img src="img/me.png" class="img">
-        </td>
+    <div class="img">
+        <?php
+        include "mostrarmenu.php";
+        $resultado = mysqli_query($conexion, $imagen);
+        while ($mostrarmenu = mysqli_fetch_array($resultado)) { ?>
 
-    </table>
-    <br>
-    <!-- <button class="btn btn-light"> <a  href="index.php">Regresar</a> </button> -->
+            <div class="col-2 row mt-5 informacion ">
+                <a href="descripcion.php?id=<?php echo $mostrarmenu['idmenu'] ?>"><img src="<?php echo $mostrarmenu['imagen']; ?>" width="180"></a><br>
+                <span><?php echo $mostrarmenu['descripcion']; ?></span>
+            </div>
 
+
+        <?php
+        }
+        ?>
+
+    </div>
+
+    <br><br><br>
 </body>
+
 </html>
+
 
 <div style="background-color: #DCDCDC;">
     <?php include('pie.php') ?>
 </div>
+
+
+<style>
+    .img {
+        display: flex;
+        max-width: 100vw;
+        text-align: center;
+        margin-left: 2%;
+        border-radius: 8px;
+        box-shadow: 0 2px 2ox;
+        margin: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .informacion {
+        background-color: white;
+        padding-top: 10px;
+        text-align: center;
+        margin-left: 2%;
+        border-radius: 8px;
+        box-shadow: 0 2px 2ox;
+        overflow: hidden;
+        margin: 20px;
+
+
+    }
+</style>
